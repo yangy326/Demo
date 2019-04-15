@@ -25,3 +25,13 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+ext{
+    // 版本号相关
+
+
+    gsonVersion = '2.8.0'
+    retrofitVersion = '2.1.0'
+
+    dbflowVersion = "4.0.0-beta7"
+}
