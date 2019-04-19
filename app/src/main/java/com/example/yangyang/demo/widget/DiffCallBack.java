@@ -13,6 +13,8 @@ public class DiffCallBack extends DiffUtil.Callback {
     public DiffCallBack(List<Student> mOldDatas, List<Student> mNewDatas) {
         this.mOldDatas = mOldDatas;
         this.mNewDatas = mNewDatas;
+        int i = 0 ;
+
     }
     @Override
     public int getOldListSize() {
