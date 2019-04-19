@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="宋智孝"
+            android:textSize="20sp"
+            android:id="@+id/txt_studentname"
+            android:textColor="@color/green"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_classid"
+            android:text="依依班 190324"
+            android:textColor="@color/darkkhaki"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="9517"
+        android:id="@+id/txt_studentid"
+        android:textColor="@color/coral"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp">
+
+        <TextView
+            android:id="@+id/txt_contacttime"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="27dp"
+            android:text="最近未联系  4天前"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/img_shuoming"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="23dp"
+            android:src="@drawable/shuoming" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

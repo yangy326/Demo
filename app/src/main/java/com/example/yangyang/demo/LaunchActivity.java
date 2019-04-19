@@ -2,10 +2,13 @@ package com.example.yangyang.demo;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class LaunchActivity extends AppCompatActivity {
+import com.example.yangyang.demo.Activity.LoginActivity;
+import com.example.yangyang.demo.Activity.MainActivity;
+import com.example.yangyang.demo.Activity.PermissionActivity;
+
+public class LaunchActivity extends PermissionActivity {
     private Intent intent;
 
     @Override
@@ -26,6 +29,7 @@ public class LaunchActivity extends AppCompatActivity {
             startActivity(intent);
 
         }
+        finish();
 
     }
 

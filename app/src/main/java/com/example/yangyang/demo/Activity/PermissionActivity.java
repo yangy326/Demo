@@ -1,4 +1,4 @@
-package com.example.yangyang.demo;
+package com.example.yangyang.demo.Activity;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -18,6 +18,9 @@ public class PermissionActivity extends AppCompatActivity {
     String[] permissions = new String[]{
             Manifest.permission.READ_PHONE_STATE,
             Manifest.permission.PROCESS_OUTGOING_CALLS,
+            Manifest.permission.READ_EXTERNAL_STORAGE,
+            Manifest.permission.WRITE_EXTERNAL_STORAGE,
+            Manifest.permission.CALL_PHONE
     };
 
     List<String> mPermissionList = new ArrayList<>();

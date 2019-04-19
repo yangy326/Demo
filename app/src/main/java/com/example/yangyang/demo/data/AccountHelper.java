@@ -1,11 +1,8 @@
 package com.example.yangyang.demo.data;
 
-import com.example.yangyang.demo.ApiServer;
-import com.example.yangyang.demo.callback.AccountCallBack;
+import com.example.yangyang.demo.net.ApiServer;
 import com.example.yangyang.demo.modle.api.Loginmodle;
 import com.example.yangyang.demo.modle.api.UserCard;
-import com.example.yangyang.demo.modle.db.User;
-import com.google.gson.Gson;
 
 import okhttp3.OkHttpClient;
 import retrofit2.Call;
@@ -19,7 +16,7 @@ public class AccountHelper {
 
 
 
-    public static void login(Loginmodle loginmodle, final AccountCallBack.Callback<UserCard> callback){
+    public static void login(Loginmodle loginmodle){
 
         OkHttpClient client = new OkHttpClient.Builder().build();
 
@@ -40,7 +37,7 @@ public class AccountHelper {
 
                 if (userCard != null){
 
-                    callback.Success(userCard);
+
                 }
 
 
@@ -50,7 +47,7 @@ public class AccountHelper {
             @Override
             public void onFailure(Call<UserCard> call, Throwable t) {
 
-                callback.Failed(1);
+
 
             }
         });

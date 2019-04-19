@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.FollowActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="填写记录"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textFontWeight="20sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
+            <TextView
+                android:id="@+id/txt_follow_studentname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宋智孝"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textFontWeight="20sp"/>
+            <TextView
+                android:id="@+id/txt_follow_classname"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="依依班 1800723"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/txt_follow_openclass"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="也开课 : 60 /73"
+                />
+            <TextView
+                android:id="@+id/txt_follow_closeclass"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="也消课 : 60 /73"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/txt_follow_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跟进人：金钟国"
+        android:layout_marginTop="20dp"
+        android:fontFamily="monospace"
+        android:textColor="@color/darkcyan"
+        android:textSize="17sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+
+
+        <Button
+            android:id="@+id/btn_follow_afterclass"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+
+
+            android:text="课后跟进"
+            android:background="@drawable/boder"/>
+        >
+        <Button
+            android:id="@+id/btn_follow_qingjia"
+
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+
+            android:text="请假补课"
+            android:background="@drawable/boder"/>
+
+        <Button
+            android:id="@+id/btn_follow_xufei"
+
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:background="@drawable/boder"
+            android:text="续费"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+
+
+        <Button
+            android:id="@+id/btn_follow_shengji"
+
+
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+
+
+            android:text="升级"
+            android:background="@drawable/boder"/>
+        >
+        <Button
+            android:id="@+id/btn_follow_goutong"
+
+
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+
+            android:text="日常沟通"
+            android:background="@drawable/boder"/>
+
+        <Button
+            android:id="@+id/btn_follow_qita"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/boder"
+            android:text="其它"/>
+
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/edit_follow_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/boder"/>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_follow_tijiao"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boder_button"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="提交"
+        />
+
+
+   <ImageView
+       android:id="@+id/img_follow_close"
+       android:layout_width="30dp"
+       android:layout_height="30dp"
+       android:layout_gravity="center"
+       android:src="@drawable/close"
+       android:layout_marginTop="15dp"/>
+
+
+
+
+
+</LinearLayout>
