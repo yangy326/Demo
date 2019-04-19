@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.example.yangyang.demo.R;
 import com.example.yangyang.demo.callback.ToastCall;
+import com.example.yangyang.demo.helper.netHelper;
 
 public class FollowActivity extends AppCompatActivity implements View.OnClickListener ,ToastCall {
 
@@ -133,6 +134,10 @@ public class FollowActivity extends AppCompatActivity implements View.OnClickLis
                 Toast.makeText(this, BackLable, Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btn_follow_tijiao:
+
+                netHelper.commitFllow();
+
+
 
                 break;
 

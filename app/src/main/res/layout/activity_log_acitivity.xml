@@ -1,9 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.LogAcitivity">
+    tools:context=".Activity.LogAcitivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/cornflowerblue"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/back"
+                android:id="@+id/img_log_back"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="跟进记录"
+                android:layout_centerHorizontal="true"
+                android:textSize="25sp"
+                android:textFontWeight="20dp"
+                android:textColor="@color/black"
+                android:layout_alignBottom="@id/img_log_back"
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="2">
+                <TextView
+                    android:id="@+id/txt_follow_studentname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="宋智孝"
+                    android:textSize="28sp"
+                    android:textColor="@color/black"
+                    android:textFontWeight="20sp"/>
+                <TextView
+                    android:id="@+id/txt_follow_classname"
 
-</android.support.constraint.ConstraintLayout>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="依依班 1800723"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:id="@+id/txt_follow_openclass"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="也开课 : 60 /73"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/txt_follow_closeclass"
+                    android:textSize="15sp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="也消课 : 60 /73"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:text="写跟进"
+                android:background="@drawable/boder_button"/>
+            <Button
+                android:layout_marginRight="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:text="打电话"
+                android:background="@drawable/boder_button"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/log_recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
