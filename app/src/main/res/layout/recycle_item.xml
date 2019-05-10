@@ -1,66 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    >
+    android:orientation="vertical"
+    android:background="@color/white">
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:id="@+id/name_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="19dp"
         android:orientation="vertical">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="宋智孝"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:id="@+id/txt_studentname"
-            android:textColor="@color/green"
+            android:textColor="@color/black"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/txt_classid"
             android:text="依依班 190324"
-            android:textColor="@color/darkkhaki"
-            android:layout_marginTop="3dp"
-            android:layout_marginBottom="5dp"/>
-    </LinearLayout>
+            android:textSize="15sp"
+            android:textColor="#FF757575 "
+            android:layout_marginTop="9dp"
+            />
 
+    </LinearLayout>
     <TextView
-        android:layout_marginLeft="15dp"
-        android:layout_width="wrap_content"
+        android:layout_alignBottom="@id/name_layout"
+        android:layout_toRightOf="@id/name_layout"
+        android:layout_marginLeft="8dp"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
+        android:layout_gravity="bottom"
         android:text="9517"
+        android:textSize="15sp"
         android:id="@+id/txt_studentid"
-        android:textColor="@color/coral"/>
+        android:textColor="#FF757575 "/>
+    <TextView
 
-    <LinearLayout
+        android:gravity="end"
+        android:id="@+id/txt_contacttime"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="31dp"
+        android:text="最近未联系 4 天前"
+        android:textSize="12sp"
+        android:textColor="#FF757575"
+        android:layout_toLeftOf="@id/img_shuoming"
+        />
+    <ImageView
+
+
+        android:id="@+id/img_shuoming"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp">
+        android:src="@drawable/shuoming"
+        android:padding="20dp"
+        android:paddingTop="10dp"
+        android:layout_alignParentRight="true"
 
-        <TextView
-            android:id="@+id/txt_contacttime"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="27dp"
-            android:text="最近未联系  4天前"
-            android:textSize="13sp" />
 
-        <ImageView
-            android:id="@+id/img_shuoming"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginTop="23dp"
-            android:src="@drawable/shuoming" />
+        />
+    <View
+        android:layout_below="@id/name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFF1F1F1"
+        android:layout_marginTop="19dp"
+        android:layout_marginLeft="18dp"/>
 
-    </LinearLayout>
+    
 
 
 
 
-</LinearLayout>
+
+
+
+</RelativeLayout>

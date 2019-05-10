@@ -6,7 +6,10 @@ public class Loginmodle {
 
     private String password;
 
-    private String token;
+    public Loginmodle(String account, String password) {
+        this.account = account;
+        this.password = password;
+    }
 
     public String getAccount() {
         return account;
@@ -24,11 +27,5 @@ public class Loginmodle {
         this.password = password;
     }
 
-    public String getToken() {
-        return token;
-    }
 
-    public void setToken(String token) {
-        this.token = token;
-    }
 }

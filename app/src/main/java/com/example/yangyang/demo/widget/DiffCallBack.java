@@ -2,7 +2,7 @@ package com.example.yangyang.demo.widget;
 
 import android.support.v7.util.DiffUtil;
 
-import com.example.yangyang.demo.TestData.Student;
+import com.example.yangyang.demo.TestData.response.main.Student;
 
 import java.util.List;
 
@@ -35,7 +35,7 @@ public class DiffCallBack extends DiffUtil.Callback {
     public boolean areContentsTheSame(int i, int i1) {
         Student beanOld = mOldDatas.get(i);
         Student beanNew = mNewDatas.get(i1);
-        if (!beanOld.getContacttime().equals(beanNew.getContacttime())) {
+        if (!beanOld.getRecentlyConnect().equals(beanNew.getRecentlyConnect())) {
             return false;//如果有内容不同，就返回false
         }
 
